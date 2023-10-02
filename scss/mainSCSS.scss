@@ -37,6 +37,8 @@ body {
 
     &__menu {
         display: flex;
+        flex-grow: 1;
+        flex-basis: 0;
         
         gap: 30px;
     }
@@ -61,11 +63,18 @@ body {
         color: #717171;
         font-size: 22px;
         line-height: 29px;
-
-        margin-left: 42px;;
         text-align: right;
+
+        flex-grow: 1;
+        flex-basis: 0;
+        cursor: default;
     }
-    &__phone:hover {
+
+    &__phone p {
+        display: inline;
+        cursor: pointer;
+    }
+    &__phone p:hover {
         text-decoration: underline;
     }
 }
@@ -379,9 +388,15 @@ body {
         font-size: 22px;
         line-height: 29px;
 
-        margin-right: 44px;
+        flex-grow: 1;
+        flex-basis: 0;
+        cursor: default;
     }
-    &__politic:hover {
+    &__politic p {
+        display: inline;
+        cursor: pointer;
+    }
+    &__politic p:hover {
         text-decoration: underline;
     }
 
@@ -392,8 +407,20 @@ body {
         color: #717171;
         font-size: 22px;
         line-height: 29px;
+        text-align: right;
+
+        flex-grow: 1;
+        flex-basis: 0;
+        cursor: default;
     }
-    &__phone:hover {
+    &__phone p {
+        display: inline;
+        cursor: pointer;
+    }
+    &__phone p:hover {
         text-decoration: underline;
     }
 }
+
+/*media*/
+/*import all media.scss*/
