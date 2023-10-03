@@ -1,0 +1,21 @@
+@media (max-width:370px) {
+    /*color*/
+    .color {
+        &__item {
+            width: 100%;
+        }
+    }
+     /*input*/
+     .input {
+
+        &__title {
+            margin-bottom: 5vh;
+
+            font-size: 22px;
+        }
+       
+        &__qvesh {
+            width: 280px;
+        }
+    }
+}
