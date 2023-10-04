@@ -2,12 +2,19 @@
 /*Inter Regular and Bold*/
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 /*main*/
+body,html {
+    overflow-x: hidden;
+}
+
 body {
     font-family: Inter;
     font-weight: 400;
     font-style: 14px;
     line-height: 18px;
     color: #0A0A0A;
+}
+body.stop {
+    overflow: clip;
 }
 .wrapper {
     min-height: 100%;
@@ -76,6 +83,75 @@ body {
     }
     &__phone a:hover {
         text-decoration: underline;
+    }
+
+    /*burger*/
+    &__adapt {
+        display: none;
+    }
+
+    &__burger {
+        width: 30px;
+        height: 18px;
+        position: relative;
+
+        cursor: pointer;
+    }
+    &__burger::before,
+    &__burger::after {
+        content: '';
+        position: absolute;
+
+        height: 2px;
+        width: 100%;
+        background-color: #FFF;
+        left: 0;
+        top: 0;
+
+        z-index: 2;
+
+        transition: all .3s ease;
+    }
+    &__burger::after {
+        top: 100%;
+    }
+
+    &__burger span {
+        content: '';
+        position: absolute;
+
+        height: 2px;
+        width: 100%;
+        background-color: #FFF;
+        left: 0;
+        top: 50%;
+
+        z-index: 2;
+
+        transition: all .3s ease;
+    }
+
+    /*burger active*/
+    &__burger.active::before{
+        transform: rotate(45deg);
+        top: 50%;
+    }
+    &__burger.active::after{
+        transform: rotate(-45deg);
+        top: 50%;
+    }
+    &__burger.active span {
+        width: 0;
+        left: 50%;
+    }
+    /*burger active*/
+    &__menu.active {
+        top: 0;
+        left: 0;
+    }
+    &__menu.active &__link{
+        font-size: 22px;
+        line-height: 32px;
     }
 }
 
@@ -429,5 +505,7 @@ body {
 @import '../scss/media/1024SCSS.scss';
 /*768*/
 @import '../scss/media/768SCSS.scss';
+/*565*/
+@import '../scss/media/565SCSS.scss';
 /*370*/
 @import '../scss/media/370SCSS.scss';

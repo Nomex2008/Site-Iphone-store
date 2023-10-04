@@ -1,0 +1,33 @@
+@media (max-width:565px) {
+    .header {
+
+        &__logo {
+            order: 2;
+            flex-grow: 1;
+            flex-basis: 0;
+
+            display: flex;
+            justify-content: center;
+        }
+
+        &__menu{
+            order: 3;
+        }
+
+        &__phone {
+            order: 1;
+        }
+        /*burger*/
+        &__adapt {
+            display: inline-block;
+            order: 4;
+
+            flex-grow: 1;
+            flex-basis: 0;
+        }
+
+        &__burger {
+            margin-left: auto;
+        }
+    }
+}
