@@ -60,7 +60,6 @@ body {
     }
 
     &__phone {
-        color: #717171;
         font-size: 22px;
         line-height: 29px;
         text-align: right;
@@ -70,11 +69,12 @@ body {
         cursor: default;
     }
 
-    &__phone p {
+    &__phone a {
+        color: #717171;
         display: inline;
         cursor: pointer;
     }
-    &__phone p:hover {
+    &__phone a:hover {
         text-decoration: underline;
     }
 }
@@ -384,7 +384,6 @@ body {
     }
 
     &__politic {
-        color: #717171;
         font-size: 22px;
         line-height: 29px;
 
@@ -392,11 +391,12 @@ body {
         flex-basis: 0;
         cursor: default;
     }
-    &__politic p {
+    &__politic a {
+        color: #717171;
         display: inline;
         cursor: pointer;
     }
-    &__politic p:hover {
+    &__politic a:hover {
         text-decoration: underline;
     }
 
@@ -404,7 +404,6 @@ body {
     }
 
     &__phone {
-        color: #717171;
         font-size: 22px;
         line-height: 29px;
         text-align: right;
@@ -413,11 +412,12 @@ body {
         flex-basis: 0;
         cursor: default;
     }
-    &__phone p {
+    &__phone a {
+        color: #717171;
         display: inline;
         cursor: pointer;
     }
-    &__phone p:hover {
+    &__phone a:hover {
         text-decoration: underline;
     }
 }
